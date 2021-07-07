@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>李昕昊对话模拟器</title>
+  <script type="text/javascript">
+    function f() {
+      var str = document.getElementById("input").value;
+      var tmp = "";
+      for (var i = 0; i < (str.length-1); ++i) {
+        tmp = tmp + "?"+ "确实";
+      }
+      document.getElementById("after").innerHTML = tmp;
+    }
+  </script>
+</head>
+<body>
+  <h1>李昕昊对话模拟器</h1>
+  <p><strong>请输入要和他说的话</strong></p>
+  <input id="input" type="text" name="words"><br>
+  <input type="submit" name="twords" value="完成" onclick="f()">
+  <p id="after"></p>
+</body>
+</html> 
